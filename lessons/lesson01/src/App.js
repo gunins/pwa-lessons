@@ -30,5 +30,5 @@ getPhotos()
     .then(template => listComponent.update(template))
     // Rendering app
     .then(() => listComponent.render(appRoot))
-    // adding click event to container body.
+    // adding click event to container root element. Later we will add more complex functionality.
     .then(()=>listComponent.on('click', ({target})=>alert(getAttribute(target,'alt'))));

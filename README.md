@@ -1,17 +1,16 @@
 ## Motivation
 
-Currently in Javascript world, is lot of talks about "Functional programming", and great frameworks libraries like 
-Angular/React/Vue and much more not so well known. In lot of organisations is no requirement for javascript knowledge.
-Priority is some framework knowledge, which is wrong. Frameworks are changing over times, also regards to new features in a browser, 
-lot of framework/libraries features are obsolete. Examples from past jQuery.animate replaced by css3 animations, ajax libraries 
-replaced by fetch API. And of course Promises now are built in.
+Current market selling lot of web frameworks such as Angular/React/Vue etc. Many developers coding
+now without understanding, where is framework functionality, and where is Javascript alone.
 
-No matter of what framework you are using, your web app structure and patterns will stay same. I'll try to do over the several lessons
-to go step by step, how to plan you app structure functional way. With no any frameworks or libraries. And maybe in later stage
-how to use same pattern with different frameworks.
+I write some tutorials, to show how to write complex web applications, without any framework, modular and functional way. 
+Reason for these tutorials, is not to say, frameworks are good or bad, but you will understand how they works.
+
+Also I want if you will get feeling how powerful is Functional programming, and how useful is category theory patterns in javascript.
+
 
 ## Prerequisites
 
-Javascript and es6 knowledge required. I not explain basics of Javascript, for some advance features, will give reference links.
-To test code, you will need latest Chrome, because I'll use es6 Modules, but not any gulp, Rollup, ur Grunt.
+Javascript and es6 knowledge required. I'll not explain basics of Javascript, for some advance features, will give reference to links.
+To run code, you need Chrome with es6 Module support. All examples we will run in browser instead of Rollup, or webpack.
  
