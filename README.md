@@ -3,10 +3,10 @@
 Current market selling lot of web frameworks such as Angular/React/Vue etc. Many developers coding
 now without understanding, where is framework functionality, and where is Javascript alone.
 
-I write some tutorials, to show how to write complex web applications, without any framework, modular and functional way. 
+I'll write some tutorials, to show how to write complex web applications, with pure Javascript, modular and functional way. 
 Reason for these tutorials, is not to say, frameworks are good or bad, but you will understand how they works.
 
-Also I want if you will get feeling how powerful is Functional programming, and how useful is category theory patterns in javascript.
+Also I want if you get feeling how powerful is Functional programming, and how useful is category theory patterns in javascript.
 
 
 ## Prerequisites
