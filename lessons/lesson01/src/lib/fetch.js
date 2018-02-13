@@ -1,6 +1,6 @@
 const {keys} = Object;
 // Currently we use only get.
-// setParams will convert json touri param string
+// setParams will convert json to uri param string
 const setParams = (params = {}) => keys(params).map(key => `${key}=${params[key]}`).join('&');
 // setURI combine uri and json params
 const setURI = (uri, params) => `${uri}?${setParams(params)}`;

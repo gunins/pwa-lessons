@@ -11,7 +11,7 @@ const params = {
 };
 
 // because need some preparations regards to our template will understand data, we adding some formating, for data
-const formatResult = (result = []) => result.map(({farm, server, id, title, secret}) => ({
+const formatResult = (array = []) => array.map(({farm, server, id, title, secret}) => ({
     src: `https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`,
     id,
     title
@@ -21,8 +21,8 @@ const formatResult = (result = []) => result.map(({farm, server, id, title, secr
 //Format uri and fetching data
 const getPhotos = () => request(setURI(rootURI, params))
     //slice and dice response
-    .then(({photos}) => photos)
-    .then(({photo}) => photo)
+    .then(({photos}={}) => photos)
+    .then(({photo}={}) => photo)
     //prepare response.
     .then(result => formatResult(result));
 

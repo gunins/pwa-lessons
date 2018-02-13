@@ -1,14 +1,16 @@
-import {component} from './lib/Component.js';
-import {createNode} from './lib/DOMmanipulators.js';
-
 import {qs} from './lib/selectors.js';
+import {createNode} from './lib/DOMmanipulators.js';
 import {getAttribute} from './lib/attributes.js';
+import {component} from './lib/Component.js';
 
-import {getPhotos} from './AppModel.js';
-import {template} from './appTemplate.js';
+import {getPhotos} from './model.js';
+import {template} from './template.js';
 
 // Selecting Document body, as a root element for app.
 const {body} = document;
+
+// selecting predefined div in body.
+const appRoot = qs('#App', body);
 
 // Doing some string preparation.
 const listTemplate = items => items.map(_ => template(_)).join('\n');
@@ -16,9 +18,6 @@ const listTemplate = items => items.map(_ => template(_)).join('\n');
 // Because on html node has state, and we need to do some mutbable manipulations, we create small container, to
 // define html, and event handlers.
 const listComponent = component(createNode('ul'));
-
-// selecting predefined div in body.
-const appRoot = qs('#App', body);
 
 // there is interesting part.
 // We fetching remote data, and applying different steps to our container.

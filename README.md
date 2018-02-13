@@ -13,4 +13,5 @@ Also I want if you get feeling how powerful is Functional programming, and how u
 
 Javascript and es6 knowledge required. I'll not explain basics of Javascript, for some advance features, will give reference to links.
 To run code, you need Chrome with es6 Module support. All examples we will run in browser instead of Rollup, or webpack.
+to run example, simply open `index.html` in lesson folder. All related javascript files you store in `src` folder.
  

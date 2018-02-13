@@ -1,8 +1,8 @@
 import {test} from "./errorHandlers.js";
 
 //wrapper for DOM manipulation methods
-const appendNode = (parent, child) => test(parent, child)(() => parent.appendChild(child));
-const createNode = (type) => document.createElement(type || 'div');
-const removeNode = (node)=>node.remove();
+const appendNode = (parent, node) => test(parent, node)(() => parent.appendChild(node));
+const createNode = (tag) => document.createElement(tag || 'div');
+const removeNode = (node)=>test(node)(()=>node.remove());
 
 export {appendNode, createNode, removeNode};
